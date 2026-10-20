@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museum of Old Bottles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="intro" aria-hidden="true">
+    <div class="door left"></div>
+    <div class="door right"></div>
+    <svg class="intro-bottle" viewBox="0 0 100 200">
+      <defs>
+        <clipPath id="introClip">
+          <path d="M40 20 V55 C40 68 15 70 15 90 V180 Q15 190 25 190 H75 Q85 190 85 180 V90 C85 70 60 68 60 55 V20 Z" />
+        </clipPath>
+      </defs>
+      <g clip-path="url(#introClip)">
+        <rect class="fill" x="0" y="0" width="100" height="200" />
+      </g>
+      <path class="glass" d="M40 20 V55 C40 68 15 70 15 90 V180 Q15 190 25 190 H75 Q85 190 85 180 V90 C85 70 60 68 60 55 V20 Z" />
+    </svg>
+    <p class="intro-text">MUSEUM OF OLD BOTTLES</p>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a href="#top" class="logo">
+        <svg viewBox="0 0 30 40" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3 H18 M12.5 3 V12 C12.5 15 6 16 6 21 V35 Q6 37 8 37 H22 Q24 37 24 35 V21 C24 16 17.5 15 17.5 12 V3" />
+          <path d="M6 26 H24" />
+        </svg>
+        Museum of Bottles
+      </a>
+
+      <input type="checkbox" id="burger" class="burger">
+      <label for="burger" class="burger-btn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="menu">
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#collection">Collection</a>
+        <a href="#halls">Halls</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#events">Events</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#login">Log in</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <img src="images/bottle-shelf.svg" alt="" class="hero-bg">
+      <div class="container">
+        <div class="hero-text">
+          <h1>Glass That Remembers Every Age</h1>
+          <p>
+            More than five hundred bottles, jars and vessels, from clay amphorae of
+            ancient Rome to the perfume flasks of Persian gardens. Each one once held
+            something precious.
+          </p>
+          <div class="buttons">
+            <a href="#collection" class="btn">View the collection</a>
+            <a href="#tickets" class="btn outline">Buy a ticket</a>
+          </div>
+          <div class="stats">
+            <div><b>500+</b><span>Bottles and jars</span></div>
+            <div><b>3000</b><span>Years of glass</span></div>
+            <div><b>10</b><span>Exhibition halls</span></div>
+            <div><b>40k</b><span>Visitors a year</span></div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="glow"></div>
+          <svg class="big-bottle" viewBox="0 0 200 400" aria-hidden="true">
+            <defs>
+              <clipPath id="bottleClip">
+                <path d="M80 40 V110 C80 135 30 140 30 180 V360 Q30 380 50 380 H150 Q170 380 170 360 V180 C170 140 120 135 120 110 V40 Z" />
+              </clipPath>
+            </defs>
+            <g class="liquid" clip-path="url(#bottleClip)">
+              <path class="wave back" d="M0 205 Q50 190 100 205 T200 205 T300 205 T400 205 T500 205 T600 205 V400 H0 Z" />
+              <path class="wave" d="M0 215 Q50 200 100 215 T200 215 T300 215 T400 215 T500 215 T600 215 V400 H0 Z" />
+              <circle class="bubble" cx="70" cy="360" r="5" />
+              <circle class="bubble" cx="110" cy="365" r="4" />
+              <circle class="bubble" cx="140" cy="355" r="6" />
+            </g>
+            <rect class="cork" x="84" y="14" width="32" height="32" rx="5" />
+            <path class="outline" d="M80 40 V110 C80 135 30 140 30 180 V360 Q30 380 50 380 H150 Q170 380 170 360 V180 C170 140 120 135 120 110 V40 Z" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about-image reveal">
+          <img src="images/bottle-shelf.svg" alt="Shelves full of old glass bottles">
+          <div class="about-badge">
+            <b>Since 2004</b>
+            <span>in the heart of Tashkent</span>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <p class="subtitle">About the museum</p>
+          <h2>Every bottle has a story inside</h2>
+          <p>
+            The Museum of Old Bottles began with a box of glass found during the
+            restoration of an old caravanserai. Today it shows bottles and vessels
+            from Rome, Persia, Central Asia, Europe and beyond.
+          </p>
+          <p>
+            Through these bottles we see how people stored water, wine, medicine,
+            ink and perfume, and how glassmaking changed the world.
+          </p>
+          <div class="features">
+            <div class="feature">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18" /><path d="M5 21V10M9.5 21V10M14.5 21V10M19 21V10" /><path d="M2 10h20L12 3 2 10z" /></svg>
+              </span>
+              <div>
+                <h3>10 halls</h3>
+                <p>Arranged by era and use.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z" /></svg>
+              </span>
+              <div>
+                <h3>Live glassblowing</h3>
+                <p>Every Saturday at noon.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15v-3a8 8 0 0 1 16 0v3" /><rect x="3" y="14" width="5" height="7" rx="2" /><rect x="16" y="14" width="5" height="7" rx="2" /></svg>
+              </span>
+              <div>
+                <h3>Audio guide</h3>
+                <p>In English, Russian and Uzbek.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="7" r="3" /><circle cx="17" cy="9" r="2.5" /><path d="M2 21v-2a5 5 0 0 1 10 0v2" /><path d="M14 21v-1.5a3.5 3.5 0 0 1 7 0V21" /></svg>
+              </span>
+              <div>
+                <h3>Family friendly</h3>
+                <p>Workshops for children.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="collection">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="subtitle">Permanent exhibition</p>
+          <h2>The Collection</h2>
+          <p>A few pieces from our halls, found in shipwrecks, old cellars and desert caravan routes.</p>
+        </div>
+
+        <div class="cards">
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/roman-amphora.svg" alt="Clay Roman amphora">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">1st century BC</span>
+              <h3>Roman Amphora</h3>
+              <p>A clay jar for olive oil and wine, carried on ships across the sea.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/roman-glass.svg" alt="Green Roman glass bottle">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">2nd century AD</span>
+              <h3>Roman Glass Flask</h3>
+              <p>Thin blown glass that held fragrant oils for the public baths.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/rosewater-bottle.svg" alt="Blue rosewater bottle">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">12th century</span>
+              <h3>Rosewater Bottle</h3>
+              <p>A Persian bottle with a long neck for sprinkling rosewater on guests.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/pilgrim-flask.svg" alt="Clear pilgrim flask">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">14th century</span>
+              <h3>Pilgrim Flask</h3>
+              <p>A round flat flask that travellers carried on the Silk Road.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/perfume-bottle.svg" alt="Purple perfume bottle">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">17th century</span>
+              <h3>Perfume Flask</h3>
+              <p>Violet glass with a cork stopper, made for a noble lady.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/wine-bottle.svg" alt="Green wine bottle">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">18th century</span>
+              <h3>Wine Bottle</h3>
+              <p>Dark green glass, found unopened in the cellar of an old house.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/medicine-bottle.svg" alt="Amber medicine bottle">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">19th century</span>
+              <h3>Medicine Bottle</h3>
+              <p>Amber glass kept the medicine safe from sunlight in the pharmacy.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-image">
+              <img src="images/ink-bottle.svg" alt="Blue ink bottle">
+              <span class="card-more">View piece</span>
+            </div>
+            <div class="card-body">
+              <span class="tag">19th century</span>
+              <h3>Ink Bottle</h3>
+              <p>A wide, heavy bottle that would not tip over on a school desk.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="halls">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="subtitle">Explore the museum</p>
+          <h2>Exhibition Halls</h2>
+          <p>Each hall shows a different side of the story of glass.</p>
+        </div>
+
+        <div class="halls">
+          <div class="hall reveal">
+            <img src="images/glass-furnace.svg" alt="A glowing glass furnace">
+            <div class="hall-text">
+              <span class="tag">Hall 1 – 3</span>
+              <h3>Fire and Sand</h3>
+              <p>How glass is made, with a real furnace and tools of old glassblowers.</p>
+            </div>
+          </div>
+
+          <div class="hall reveal">
+            <img src="images/roman-amphora.svg" alt="A clay amphora">
+            <div class="hall-text">
+              <span class="tag">Hall 4 – 6</span>
+              <h3>Ancient Vessels</h3>
+              <p>Amphorae and flasks from Rome, Egypt and the ancient cities of Sogdiana.</p>
+            </div>
+          </div>
+
+          <div class="hall reveal">
+            <img src="images/perfume-bottle.svg" alt="A perfume bottle">
+            <div class="hall-text">
+              <span class="tag">Hall 7 – 10</span>
+              <h3>Perfume and Medicine</h3>
+              <p>Small, colorful bottles that once held scents, oils and cures.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="history">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="subtitle">From clay to glass</p>
+          <h2>A Short History of the Bottle</h2>
+          <p>How people learned to keep liquids safe for thousands of years.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="step reveal">
+            <div class="dot"></div>
+            <div class="step-box">
+              <h3>Clay Vessels</h3>
+              <span class="tag">3,000 years ago</span>
+              <p>People store water, oil and wine in clay jars and amphorae.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="dot"></div>
+            <div class="step-box">
+              <h3>Glassblowing</h3>
+              <span class="tag">1st century BC</span>
+              <p>In the Roman world, glassblowing is invented. Bottles become cheap and light.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="dot"></div>
+            <div class="step-box">
+              <h3>The Islamic Golden Age</h3>
+              <span class="tag">9th – 14th centuries</span>
+              <p>Masters in Persia and Syria make colorful glass with gold and enamel.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="dot"></div>
+            <div class="step-box">
+              <h3>The Machine Age</h3>
+              <span class="tag">19th – 20th centuries</span>
+              <p>Machines make millions of identical bottles every day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="subtitle">Take a look</p>
+          <h2>Gallery</h2>
+          <p>Moments from our halls and workshop.</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="photo big reveal">
+            <img src="images/bottle-shelf.svg" alt="Bottle shelves">
+            <figcaption>The great glass wall</figcaption>
+          </figure>
+          <figure class="photo reveal">
+            <img src="images/glass-furnace.svg" alt="Glass furnace">
+            <figcaption>Our glass furnace</figcaption>
+          </figure>
+          <figure class="photo reveal">
+            <img src="images/rosewater-bottle.svg" alt="Rosewater bottle">
+            <figcaption>Rosewater bottle</figcaption>
+          </figure>
+          <figure class="photo reveal">
+            <img src="images/roman-glass.svg" alt="Roman glass">
+            <figcaption>Roman glass</figcaption>
+          </figure>
+          <figure class="photo reveal">
+            <img src="images/medicine-bottle.svg" alt="Medicine bottle">
+            <figcaption>Old pharmacy</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="events">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="subtitle">What’s on</p>
+          <h2>Upcoming Events</h2>
+          <p>Talks, workshops and evening tours for all ages.</p>
+        </div>
+
+        <div class="events">
+          <div class="event reveal">
+            <div class="date">
+              <b>26</b>
+              <span>Oct</span>
+            </div>
+            <div>
+              <h3>Glassblowing Show</h3>
+              <p>Watch a master turn hot sand into a bottle in front of you.</p>
+              <span class="time">12:00 – 13:00</span>
+            </div>
+          </div>
+
+          <div class="event reveal">
+            <div class="date">
+              <b>07</b>
+              <span>Nov</span>
+            </div>
+            <div>
+              <h3>Message in a Bottle</h3>
+              <p>A workshop for children: write a letter and seal your own bottle.</p>
+              <span class="time">11:00 – 12:30</span>
+            </div>
+          </div>
+
+          <div class="event reveal">
+            <div class="date">
+              <b>20</b>
+              <span>Nov</span>
+            </div>
+            <div>
+              <h3>Treasures of Shipwrecks</h3>
+              <p>A lecture on bottles found at the bottom of the sea.</p>
+              <span class="time">16:00 – 17:30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tickets">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="subtitle">Plan your visit</p>
+          <h2>Tickets</h2>
+          <p>Choose a ticket and spend a day among glass from every age.</p>
+        </div>
+
+        <div class="prices">
+          <div class="price reveal">
+            <h3>Student</h3>
+            <div class="sum">$4 <small>/ person</small></div>
+            <ul>
+              <li>All permanent halls</li>
+              <li>Student card required</li>
+              <li>Free on Thursdays</li>
+            </ul>
+            <a href="#login" class="btn">Choose</a>
+          </div>
+
+          <div class="price main reveal">
+            <span class="popular">Most popular</span>
+            <h3>Adult</h3>
+            <div class="sum">$8 <small>/ person</small></div>
+            <ul>
+              <li>All permanent halls</li>
+              <li>Audio guide included</li>
+              <li>Glassblowing show</li>
+            </ul>
+            <a href="#login" class="btn">Choose</a>
+          </div>
+
+          <div class="price reveal">
+            <h3>Family</h3>
+            <div class="sum">$20 <small>/ family</small></div>
+            <ul>
+              <li>Two adults and three children</li>
+              <li>Children’s workshop</li>
+              <li>Small gift bottle</li>
+            </ul>
+            <a href="#login" class="btn">Choose</a>
+          </div>
+        </div>
+
+        <p class="hours">Open Tuesday to Sunday from 10:00 to 19:00. Closed on Mondays.</p>
+      </div>
+    </section>
+
+    <section class="section light">
+      <div class="container faq-wrap">
+        <div class="section-head reveal">
+          <p class="subtitle">Good to know</p>
+          <h2>Questions</h2>
+        </div>
+
+        <div class="faq">
+          <details class="reveal">
+            <summary>Can I take photos inside?</summary>
+            <p>Yes, photos without flash are allowed in every hall.</p>
+          </details>
+          <details class="reveal">
+            <summary>Can children try glassblowing?</summary>
+            <p>For safety, children watch the show, but they can decorate their own bottle in the workshop.</p>
+          </details>
+          <details class="reveal">
+            <summary>Is there a museum shop?</summary>
+            <p>Yes. You can buy handmade glass bottles made in our own workshop.</p>
+          </details>
+          <details class="reveal">
+            <summary>Can I donate an old bottle?</summary>
+            <p>Yes. Send an email to info@museumofbottles.uz and our curators will reply.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container forms">
+        <div class="form-side reveal">
+          <img src="images/glass-furnace.svg" alt="A glowing glass furnace">
+          <div class="form-side-text">
+            <h3>Join the museum</h3>
+            <p>Buy tickets online, save your favorite bottles and get news about upcoming events.</p>
+          </div>
+        </div>
+
+        <div class="form-box reveal" id="login">
+          <div class="login">
+            <h2>Log In</h2>
+            <p>Log in to buy tickets and save your favorite pieces.</p>
+            <form id="loginForm">
+              <label for="loginName">Name</label>
+              <input type="text" id="loginName" placeholder="Your name">
+
+              <label for="loginPassword">Password</label>
+              <input type="password" id="loginPassword" placeholder="Your password">
+
+              <button type="submit" class="btn">Log in</button>
+            </form>
+          </div>
+
+          <div class="welcome" id="welcome">
+            <svg viewBox="0 0 30 40" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3 H18 M12.5 3 V12 C12.5 15 6 16 6 21 V35 Q6 37 8 37 H22 Q24 37 24 35 V21 C24 16 17.5 15 17.5 12 V3" />
+              <path d="M6 26 H24" />
+            </svg>
+            <h3>Welcome!</h3>
+            <p id="welcomeText"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="logo">
+          <svg viewBox="0 0 30 40" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3 H18 M12.5 3 V12 C12.5 15 6 16 6 21 V35 Q6 37 8 37 H22 Q24 37 24 35 V21 C24 16 17.5 15 17.5 12 V3" />
+            <path d="M6 26 H24" />
+          </svg>
+          Museum of Bottles
+        </a>
+        <p>A museum of old bottles and glass, telling 3,000 years of history through clay, sand and fire.</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Telegram">TG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Museum</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#halls">Halls</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Visitors</h4>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#tickets">Tickets</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#login">Log in</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Address</h4>
+        <ul>
+          <li>12 Glass Street, Tashkent</li>
+          <li>+998 71 000 00 01</li>
+          <li>info@museumofbottles.uz</li>
+          <li>Tue – Sun, 10:00 – 19:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">© 2026 Museum of Old Bottles. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
